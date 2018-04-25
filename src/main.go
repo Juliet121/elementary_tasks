@@ -1,11 +1,5 @@
 package main
 
-import (
-
-
-)
-
-
 func main() {
 	/*fmt.Println("len:  ", len("Julia Saryan"))
 	fmt.Println("Char: ", "Yuliya"[5])
