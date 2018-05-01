@@ -1,12 +1,43 @@
 package main
 
+import "fmt"
+
 func main() {
-	/*fmt.Println("len:  ", len("Julia Saryan"))
-	fmt.Println("Char: ", "Yuliya"[5])
-	fmt.Print("ToUpper:  ", s.ToUpper("Yuliya"))
-	fmt.Println("Contains ", s.Contains("Yuliya ", "y"))
-	fmt.Println("Repeat  ", s.Repeat("Yuliya ", 5))
-	fmt.Println("Split:     ", s.Split("a-b-c-d-e", " -"))*/
+
+
+
+
+
+	fmt.Println(Average(19, 24, 98, 76, 85, 10))
+}
+
+func Average(nums...int) int {
+	fmt.Print(nums, " ")
+	r := []int{}
+	summa:=0
+	for i := 0; i <len(nums); i++ {
+		summa=summa+nums[i]
+		r =append(r, nums[i])
+	}
+	d:=summa/len(r)
+	return d
+}
+
+
+
+
+
+
+
+
+
+
+/*fmt.Println("len:  ", len("Julia Saryan"))
+fmt.Println("Char: ", "Yuliya"[5])
+fmt.Print("ToUpper:  ", s.ToUpper("Yuliya"))
+fmt.Println("Contains ", s.Contains("Yuliya ", "y"))
+fmt.Println("Repeat  ", s.Repeat("Yuliya ", 5))
+fmt.Println("Split:     ", s.Split("a-b-c-d-e", " -"))*/
 
 	//type Envelope struct {
 	//		Height float64
@@ -536,4 +567,3 @@ func main() {
 
 	//Сортировка треугольников
 
-}
